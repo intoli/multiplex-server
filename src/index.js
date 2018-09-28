@@ -29,6 +29,16 @@ class MultiplexServer extends net.Server {
         return;
       }
 
+      // Connect the socket directly to another server.
+      const server = config;
+      if (server instanceof net.Server) {
+        connection.pause();
+        server.emit('connection', connection);
+        connection.unshift(data);
+        connection.resume();
+        return;
+      }
+
       this.emit('error', new Error('No valid configuration to forward the connection.'));
     });
   };
