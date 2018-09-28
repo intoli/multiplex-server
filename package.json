@@ -15,6 +15,7 @@
     "test:generated": "NODE_ENV=testing babel-node test/run-generated-tests.js"
   },
   "devDependencies": {
+    "axios": "^0.18.0",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
