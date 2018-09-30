@@ -2,7 +2,7 @@ import net from 'net';
 
 
 class MultiplexServer extends net.Server {
-  constructor({ http, https, ...options}) {
+  constructor({ http, https, ...options }) {
     super(options);
     this.http = http;
     this.https = https;
