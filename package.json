@@ -1,6 +1,6 @@
 {
   "name": "multiplex-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A node.js multiplex server which allows you to handle HTTP and HTTPS requests on the same port. ",
   "main": "dist/index.js",
   "repository": "https://github.com/intoli/multiplex-server",
